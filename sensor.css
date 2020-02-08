@@ -26,15 +26,15 @@ box-shadow: 2px 2px 3px 1px #666;
 
 }
 
-a#download{
+#download{
 border-radius: 20px;
 -webkit-border-radius: 20px;
 -moz-border-radius: 20px;
 
-background-color:#006633;
+background-color:#222222;
 padding:0.3em;
 font-size:2em;
-color:#ffffff;
+color:#ff6633;
 font-weight:bold;
 text-decoration:none;
 }
