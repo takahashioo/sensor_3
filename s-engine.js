@@ -146,18 +146,4 @@ function exportcsv(){
   }
 
 
-
-
-var date = new Date();
-var year = date.getFullYear();
-var month = ("0"+(date.getMonth() + 1)).slice(-2);
-var day = ("0"+date.getDate()).slice(-2); 
-
-
-  var download = document.getElementById('download');
-  download.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(finalVal));
-
-  download.setAttribute('download','sensor'+ year + month + day +'.csv');
-
-
 }
