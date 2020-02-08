@@ -1,5 +1,5 @@
 input#startbutton, input#stopbutton{
-              width:10em;
+              width:70%;
               }
 
 h2{
@@ -23,5 +23,4 @@ padding:0.2em;
 font-size:2em;
 color:#ff6633;
 font-weight:200;
-text-decoration:none;
 }
