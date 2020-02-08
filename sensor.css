@@ -16,14 +16,12 @@ width: 100%;
 }
 
 #download{
-border-radius: 20px;
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
+
 
 background-color:#222222;
-padding:0.3em;
-font-size:2em;
+padding:0.2em;
+font-size:1em;
 color:#ff6633;
-font-weight:600;
+font-weight:200;
 text-decoration:none;
 }
