@@ -1,11 +1,10 @@
 function removeConfig(){
 	localStorage.clear();
-	alert("削除しました");
 }
 
 
 function startstop(){
-if (document.getElementById("startstop").innerHTML=="測定開始"){
+if (document.getElementById("startstop").innerHTML=="開始"){
 
 sensor_on(); 
 document.getElementById("startstop").innerHTML="停止";
@@ -13,7 +12,7 @@ document.getElementById("startstop").innerHTML="停止";
 } else {
 
 sensor_off(); 
-document.getElementById("startstop").innerHTML="測定開始";
+document.getElementById("startstop").innerHTML="開始";
 
 	}
 }
