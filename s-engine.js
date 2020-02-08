@@ -56,9 +56,7 @@ document.getElementById("startstop").innerHTML="開始";
           
 		
 	  
-	  printValue('acc-x', x); //x
-	  printValue('acc-y', y); //y
-	  printValue('acc-z', z); //z
+	 
 
 	  printValue('acc-gx', gx); //gx
 	  printValue('acc-gy', gy); //gy
@@ -89,14 +87,14 @@ function list(){
   for(var i = 0; i < localStorage.length ; i++) {
 
 	var localstragekey = localStorage.key(i)
-	var d_acc_x="";
+	
 	var d_acc_gx="";
 	var d_rr_a="";
 
 	if(localStorage.getItem(localstragekey)){
 
 		var d = JSON.parse(localStorage.getItem(localstragekey));
-		d_acc_x = d.acc_x;
+		
 		d_acc_gx = d.acc_gx;
 		d_rr_a = d.rr_a;
 	}
@@ -116,9 +114,7 @@ function exportcsv(){
   for(var i = 0; i < localStorage.length ; i++) {
 
 	var localstragekey = localStorage.key(i)
-	var d_acc_x="";
-	var d_acc_y="";
-	var d_acc_z="";
+	
 	
 	var d_acc_gx="";
 	var d_acc_gy="";
@@ -132,9 +128,7 @@ function exportcsv(){
 
 	var d = JSON.parse(localStorage.getItem(localstragekey));
 
-		d_acc_x = d.acc_x;
-		d_acc_y = d.acc_y;
-		d_acc_z = d.acc_z;
+		
 		
 		d_acc_gx = d.acc_gx;
 		d_acc_gy = d.acc_gy;
@@ -148,7 +142,7 @@ function exportcsv(){
 	}
 
 	
-	finalVal += localstragekey +","+ d_acc_x +","+ d_acc_y +","+ d_acc_z +","+ d_acc_gx +","+ d_acc_gy +","+ d_acc_gz +","+ d_rr_a +","+ d_rr_b +","+ d_rr_g +'\n';
+	finalVal += localstragekey +","+ d_acc_gx +","+ d_acc_gy +","+ d_acc_gz +","+ d_rr_a +","+ d_rr_b +","+ d_rr_g +'\n';
   }
 
 
